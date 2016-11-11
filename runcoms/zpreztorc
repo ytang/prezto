@@ -42,7 +42,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the query found color.
-zstyle ':prezto:module:autosuggestions:color' found 'fg=7'
+zstyle ':prezto:module:autosuggestions:color' found 'fg=8'
 
 #
 # Editor
@@ -73,10 +73,10 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the query found color.
-zstyle ':prezto:module:history-substring-search:color' found 'fg=15,bg=green'
+zstyle ':prezto:module:history-substring-search:color' found 'fg=black,bg=green'
 
 # Set the query not found color.
-zstyle ':prezto:module:history-substring-search:color' not-found 'fg=15,bg=red'
+zstyle ':prezto:module:history-substring-search:color' not-found 'fg=black,bg=red'
 
 # Set the search globbing flags.
 # zstyle ':prezto:module:history-substring-search' globbing-flags ''
@@ -140,7 +140,7 @@ zstyle ':prezto:module:syntax-highlighting' styles \
   'commandseparator' 'fg=cyan' \
   'single-hyphen-option' 'fg=magenta' \
   'double-hyphen-option' 'fg=magenta' \
-  'back-quoted-argument' 'fg=9' \
+  'back-quoted-argument' 'fg=16' \
   'assign' 'fg=magenta' \
   'redirection' 'fg=cyan'
 #   'builtin' 'bg=blue' \
