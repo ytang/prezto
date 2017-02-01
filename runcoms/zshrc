@@ -13,4 +13,8 @@ fi
 # Customize to your needs...
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=15,bg=red')
 
+# Fix emacs tramp.
+[ $TERM = 'dumb' ] && unsetopt zle
+
+# Source local config.
 [ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local
