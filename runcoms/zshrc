@@ -16,5 +16,8 @@ ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=15,bg=red')
 # Fix emacs tramp.
 [ $TERM = 'dumb' ] && unsetopt zle
 
+# https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Source local config.
 [ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local
