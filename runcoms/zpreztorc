@@ -177,7 +177,7 @@ zstyle ':prezto:module:syntax-highlighting' styles \
   'commandseparator' 'fg=cyan' \
   'single-hyphen-option' 'fg=magenta' \
   'double-hyphen-option' 'fg=magenta' \
-  'back-quoted-argument' 'fg=16' \
+  'back-quoted-argument' 'fg=cyan' \
   'assign' 'fg=magenta' \
   'redirection' 'fg=cyan'
 #   'builtin' 'bg=blue' \
@@ -185,8 +185,8 @@ zstyle ':prezto:module:syntax-highlighting' styles \
 #   'function' 'bg=blue'
 #
 # Set syntax pattern styles.
-# zstyle ':prezto:module:syntax-highlighting' pattern \
-#   'rm*-rf*' 'fg=white,bold,bg=red'
+zstyle ':prezto:module:syntax-highlighting' pattern \
+  'rm*-rf*' 'fg=white,bold,bg=red'
 
 #
 # Terminal
