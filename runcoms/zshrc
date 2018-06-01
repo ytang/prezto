@@ -5,6 +5,10 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Set Powerlevel9k mode before Prezto is loaded.
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_DIR_SHOW_WRITABLE=true
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
