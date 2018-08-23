@@ -21,6 +21,7 @@ fi
 
 # https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_TMUX=1
 
 # https://junegunn.kr/2016/07/fzf-git
 is_in_git_repo() {
