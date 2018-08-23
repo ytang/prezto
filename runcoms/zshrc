@@ -7,6 +7,7 @@
 
 # Set Powerlevel9k mode before Prezto is loaded.
 POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history load ram time)
 POWERLEVEL9K_DIR_SHOW_WRITABLE=true
 
 # Source Prezto.
