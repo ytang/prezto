@@ -16,6 +16,9 @@ fi
 
 # Customize to your needs...
 
+# Prevent Neovim nesting.
+[ -n "$NVIM_LISTEN_ADDRESS" ] && alias nvim=nvr
+
 # Fix emacs tramp.
 [ $TERM = 'dumb' ] && unsetopt zle
 
