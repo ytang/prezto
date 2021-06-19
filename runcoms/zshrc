@@ -19,6 +19,19 @@ fi
 
 # Customize to your needs...
 
+# Aliases for kittens.
+if [[ $TERM =~ 'kitty' ]]; then
+  alias d='kitty +kitten diff'
+  alias rg='kitty +kitten hyperlinked_grep'
+  alias icat='kitty +kitten icat'
+fi
+
+# Replace cat with bat.
+(( $+commands[bat] )) && alias cat='bat --theme=gruvbox-dark --style=numbers,changes --italic-text=always'
+
+# Replace ls with GNU ls and enable hyperlinks.
+(( $+commands[gls] )) && alias ls='gls --color=auto --hyperlink=auto'
+
 # Prevent Neovim nesting.
 [ -n "$NVIM_LISTEN_ADDRESS" ] && alias nvim=nvr
 
