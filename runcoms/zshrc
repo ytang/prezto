@@ -41,6 +41,17 @@ fi
 # https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_TMUX=1
+if (( $+commands[bat] )); then
+  export FZF_CTRL_T_OPTS="--preview 'bat --theme=gruvbox-dark --style=numbers --color=always --italic-text=always --line-range=:500 {}'"
+else
+  export FZF_CTRL_T_OPTS="--preview 'cat {} | head -500'"
+fi
+if (( $+commands[fd] )); then
+  export FZF_DEFAULT_COMMAND="fd --type=file --color=always"
+  export FZF_DEFAULT_OPTS="--ansi"
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_ALT_C_COMMAND="fd --type=directory"
+fi
 
 # https://junegunn.kr/2016/07/fzf-git
 is_in_git_repo() {
